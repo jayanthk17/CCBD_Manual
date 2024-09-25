@@ -1,0 +1,25 @@
+Hadoop: 
+1. source Bash.sh
+2. cd OddEven/
+3. vi driver.java
+4. vi mapper.java
+5. vi reducer.java
+6. gedit oe.txt
+7. javac -d . *.java
+7. echno Main-Class: OddEven.driver > Manifest,txt
+8. jar cfm oddeven.jar Manifest.txt oddeven/*.class
+9. Hadoop jar oddeven.jar oe.txt output
+10. cat output/*
+
+
+Spark:
+1. source Bash.sh
+2. cd Earthquake/
+3. spark-submit 1.py Earthquake.txt output
+4. cat output/*
+
+Pig:
+1. source Bash.sh //for Hadoop
+2. source Bash.sh //for pig
+3. pig
+
